@@ -1,0 +1,304 @@
+<html>
+  <head>
+    <meta name="code-stutio" content="code-123" />
+  </head>
+  <meta charset="utf-8" />
+  <title>My...</title>
+  <style>
+    .a {
+      background-color: rgb(33, 149, 1);
+      color: white;
+      text-align: center;
+      padding: 5px;
+    }
+    .b {
+      overflow: hidden;
+      color: #f2f2f2;
+      background-color: rgb(72, 72, 72);
+    }
+    .nav-link {
+      border: 1px solid #d4d6df;
+      padding: 15px;
+      transition: 0.3s;
+      color: #2a2c39;
+      border-radius: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .b a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .b a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .f {
+      overflow: hidden;
+      color: #f2f2f2;
+      background-color: gray;
+      height: 740px;
+      text-align: center;
+      width: 188px;
+      float: right;
+    }
+
+    .f a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px 70px;
+      text-decoration: none;
+    }
+
+    .f a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .c {
+      line-height: 30px;
+      background-color: rgb(181, 157, 18);
+      color: white;
+      height: 800px;
+      width: 104px;
+      float: left;
+      padding: 20px;
+    }
+    .d {
+      width: auto;
+      float: left;
+      padding: 10px;
+    }
+    .e {
+      background-color: rgb(40, 40, 40);
+      color: rgb(200, 200, 200);
+      clear: both;
+      text-align: center;
+      padding: 1px;
+    }
+    .e a {
+      color: rgb(200, 200, 200);
+      padding: 0px 0px;
+      text-decoration: none;
+    }
+    .e a:hover {
+      color: rgb(250, 250, 250);
+    }
+    .vertical-text {
+      writing-mode: vertical-rl;
+      letter-spacing: 20px;
+      text-align: center;
+    }
+    .container {
+      display: flex; /* 将容器设置为 flex 布局 */
+    }
+
+    .component1 {
+      flex: 1;
+    }
+    .component2 {
+      flex: 19;
+    }
+    .introduction {
+      line-height: 2; /* 设置行间距为当前文字大小的1.6倍 */
+    }
+    .center {
+      text-align: center;
+    }
+    .nav-link {
+      background-color: rgb(255, 255, 255);
+      margin-left: auto;
+      margin-right: 40px;
+      border: #000000;
+    }
+  </style>
+  <body>
+    <div
+      class="a container"
+      style="justify-content: right; align-items: center"
+    >
+      <div id="box" style="opacity: 0.01">
+        <h1>侨缘APP 官网</h1>
+      </div>
+      <a
+        class="nav-link"
+        href="advise.html"
+        style="color: rgb(0, 0, 0); margin-left: 500px"
+      >
+        意见反馈
+      </a>
+      <script>
+        var i = 1;
+        var flag = true;
+        function fade() {
+          var box = document.getElementById("box");
+          if (document.all) {
+            box.style.filter = "alpha(opacity='+i+')";
+          } else {
+            box.style.opacity = parseFloat(i / 100);
+          }
+          if (i < 100 && flag) {
+            i += 5;
+          } else {
+            flag = false;
+          }
+          if (i > 0 && !flag) {
+            i -= 5;
+          } else {
+            flag = true;
+          }
+          setTimeout("fade()", 50);
+        }
+        fade();
+      </script>
+    </div>
+
+    <div class="container">
+      <div class="c vertical-text component1">
+        <h2>全球华人成长家园</h2>
+      </div>
+
+      <div class="d component2">
+        <h2 class="center">（一）项目背景</h2>
+
+        <p class="introduction">
+          二十大报告中强调：“实现中华民族伟大复兴的梦想，需要海内外中华儿女共同奋斗。”而在第十一次全国归侨侨眷代表大会上，习总书记也提出了“在强国建设、民族复兴的新征程上，我们要巩固和发展最广泛的爱国统一战线，把归侨侨眷和海外侨胞紧密团结起来，把归侨侨眷和海外侨胞的优势发挥出来…”的相同观点。但随着全球化程度不断加深，海外华人逐渐发展为一个拥有六千万之众、遍布全球近200个国家和地区的移民群体。他们在族群属性上同属中华儿女，在文化属性上，都具有浓厚的中华文化基因，但在文化认同上，都面临着共同的挑战。
+          中西文化冲突以及代际传递：初代华侨在海外立足之后，仍有许多人选择通过捐资、建宅、宴请乡民等仪式性行为来体现对家乡和亲族的认同和归属。第二代和第三代华裔更多地将自身纳入居留国成员，在生活习惯、习俗观念、宗教信仰等方面被侨居国同化，在宗族关系、社会关系、生活经历等方面与祖居地的联系更弱、情感关系更淡薄。第二代和第三代华裔对祖居地怀有“过客”心态，对侨乡本土文化认识但不认同、认识但不传承，进一步加剧侨乡文化传承的断层问题。
+          实体空间消亡和集体记忆枯竭：许多地区为了推动当地经济发展、促进人口回流，采取将侨乡历史文化建筑拆除或改造为商业空间和旅游空间的方式进行更新改造。但这实际上剥
+          夺了侨乡建筑原有的居住生活功能，进一步压缩了当地民众的生活空间和仪式空间，加剧侨乡文化传承的断层问题。
+          外媒不实言论报道和中国对外传播不足：因为意识主义和思想形态的不一致，外媒通常以自身的价值观和标准来评判中国。在中国，许多社会问题和现象可能被视为正常或需要改进的地方，但在他们眼中，它们可能被视为负面的、有问题的。除此以外，中国在国际传播方面相对薄弱，没有足够的话语权去纠正和反驳西方媒体的负面报道。这使得负面新闻更容易在国际社会中流传，影响海外华人对中国的看法。
+          因此，如何画好最大同心圆，汇聚起同心共圆中国梦的磅礴力量，是新时代亟需思考和解决的问题。
+        </p>
+        <br />
+        <br />
+        <h2 class="center">（二）项目使命</h2>
+
+        <p class="introduction">
+          本项目从实践出发，围绕“侨乡侨文化建设与传承”主题，遵循“认知-认同-践行”设计逻辑，以老中青华人华侨需求为导向，精细设计精准对接，以推动侨乡文化繁荣发展，增强侨胞文化自觉和文化自信，激发广大侨胞爱国爱乡之情，汇聚力量同圆中国梦。
+          本项目以传承并弘扬侨文化为核心，以海内外华侨为目标受众群体，以年龄为变量细分市场，针对不同年龄层次的用户整合各类服务海外华人资源，致力于打造为海内外华侨提供全面便捷的生活服务社区类APP--“侨缘”。侨缘APP将以华侨独特的侨文化为纽带，以华侨对中华文化的认同感为衔接，打造集用户自创、“种草”社交、虚拟社区、旅游文化志愿服务等综合一体的商业生态体系，用平台自身丰厚的资源为传承弘扬侨文化付诸实践。以青年侨胞使用侨缘APP为例，侨缘APP区别于一般直接提供服务资源的政务服务平台，侨缘APP其“社交”的天然属性将与近年来大热的“社区分享”有机对接，将关注点放在UGC(用户生产内容)社区分享上。用户可通过发布短视频或文章“种草安利”，实现碎片化分享交流，符合年轻群体的消费习惯和心理需求。用我们精准的项目设计满足青年侨胞的情感需求，通过“内引与外联”[4]主动介入文化交流，增加海外华人的认同感，为持续推动侨乡文化繁荣发展、向国际社会传播中华文化、讲述中国故事、塑造中国形象提供坚实的外在力量。
+          项目初步以福清为服务基点、链接政府民政部门与各高校学生组织，实现信息对称化服务同时收集整合各类信息来源以及各种海外华侨信息，不断对APP进行更新优化，我们以高校为支撑扩展到广大社会群体以及各类公司、组织团体等。借助于当今时代“大数据互联网”各类互联网公司以及云数据服务项目，以手机
+          App应用、网站建设、微信公众号运营、微博信息服务等多种形式呈现。[4]主动介入文化交流，增加海外华人的认同感，努力成为向国际社会传播中华文化、讲述中国故事、塑造中国形象的外在力量。
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      !(function () {
+        function o(w, v, i) {
+          return w.getAttribute(v) || i;
+        }
+        function j(i) {
+          return document.getElementsByTagName(i);
+        }
+        function l() {
+          var i = j("script"),
+            w = i.length,
+            v = i[w - 1];
+          return {
+            l: w,
+            z: o(v, "zIndex", -1),
+            o: o(v, "opacity", 7),
+            c: o(v, "color", "250,0,0"),
+            n: o(v, "count", 150),
+          };
+        }
+        function k() {
+          (r = u.width =
+            window.innerWidth ||
+            document.documentElement.clientWidth ||
+            document.body.clientWidth),
+            (n = u.height =
+              window.innerHeight ||
+              document.documentElement.clientHeight ||
+              document.body.clientHeight);
+        }
+        function b() {
+          e.clearRect(0, 0, r, n);
+          var w = [f].concat(t);
+          var x, v, A, B, z, y;
+          t.forEach(function (i) {
+            (i.x += i.xa),
+              (i.y += i.ya),
+              (i.xa *= i.x > r || i.x < 0 ? -1 : 1),
+              (i.ya *= i.y > n || i.y < 0 ? -1 : 1),
+              e.fillRect(i.x - 0.5, i.y - 0.5, 1, 1);
+            for (v = 0; v < w.length; v++) {
+              x = w[v];
+              if (i !== x && null !== x.x && null !== x.y) {
+                (B = i.x - x.x), (z = i.y - x.y), (y = B * B + z * z);
+                y < x.max &&
+                  (x === f &&
+                    y >= x.max / 2 &&
+                    ((i.x -= 0.01 * B), (i.y -= 0.01 * z)),
+                  (A = (x.max - y) / x.max),
+                  e.beginPath(),
+                  (e.lineWidth = A / 2),
+                  (e.strokeStyle = "rgba(" + s.c + "," + (A + 0.2) + ")"),
+                  e.moveTo(i.x, i.y),
+                  e.lineTo(x.x, x.y),
+                  e.stroke());
+              }
+            }
+            w.splice(w.indexOf(i), 1);
+          }),
+            m(b);
+        }
+        var u = document.createElement("canvas"),
+          s = l(),
+          c = "c_n" + s.l,
+          e = u.getContext("2d"),
+          r,
+          n,
+          m =
+            window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function (i) {
+              window.setTimeout(i, 1000 / 45);
+            },
+          a = Math.random,
+          f = {
+            x: null,
+            y: null,
+            max: 100000,
+          };
+        u.id = c;
+        u.style.cssText =
+          "position:fixed;top:0;left:0;z-index:" + s.z + ";opacity:" + s.o;
+        j("body")[0].appendChild(u);
+        k(), (window.onresize = k);
+        (window.onmousemove = function (i) {
+          (i = i || window.event), (f.x = i.clientX), (f.y = i.clientY);
+        }),
+          (window.onmouseout = function () {
+            (f.x = null), (f.y = null);
+          });
+        for (var t = [], p = 0; s.n > p; p++) {
+          var h = a() * r,
+            g = a() * n,
+            q = 2 * a() - 1,
+            d = 2 * a() - 1;
+          t.push({
+            x: h,
+            y: g,
+            xa: q,
+            ya: d,
+            max: 9000,
+          });
+        }
+        setTimeout(function () {
+          b();
+        }, 100);
+      })();
+    </script>
+  </body>
+</html>
